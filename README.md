@@ -31,3 +31,35 @@ $ ddev drush en gin_toolbar
 $ ddev drush cr
 ```
 
+# Creación de un subtema con Bootstrap
+```shell
+$ ddev composer require 'drupal/bootstrap_barrio:^5.5'
+$ composer require 'drupal/bootstrap_sass:^5.0'
+$ mkdir web/themes/custom
+$ mv web/themes/contrib/bootstrap_sass/ web/themes/custom/benach_viagye
+$ cd themes/custom/benach-viagye
+$ npm install
+```
+
+Dentro de la configuración de Gulp (archivo benach_viagye/gulpfile.js), tenemos que cambiar esta línea por el nombre de dominio de nuestro sitio:
+```shell
+  browserSync.init({
+    proxy: "http://yourdomain.com",
+  });
+```
+También podemos evitar que se ejecute browserSync cambiando esta línea:
+```shell
+  const build = gulp.series(styles, gulp.parallel(js, serve))
+```
+por esta otra:
+```shell
+const build = gulp.series(styles, gulp.parallel(js))
+```
+Por último, para compilar los cambios en JS y Sass, ejecutaremos el comando:
+```shell
+$ gulp
+```
+O, alternativamente:
+```shell
+$ ./node_modules/.bin/gulp
+```

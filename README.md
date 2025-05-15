@@ -63,3 +63,5 @@ O, alternativamente:
 ```shell
 $ ./node_modules/.bin/gulp
 ```
+
+Iconos: Fontawesome https://fontawesome.com/icons?d=gallery&m=free

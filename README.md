@@ -18,3 +18,16 @@
 $ ddev start
 ```
 
+# instalando tema basico
+```shell
+$ ddev composer require 'drupal/bootstrap_barrio:^5.5'
+```
+
+# instalando tema administrativo
+```shell
+$ ddev composer require 'drupal/gin:^4.0'
+$ ddev drush theme:install gin
+$ ddev drush en gin_toolbar
+$ ddev drush cr
+```
+

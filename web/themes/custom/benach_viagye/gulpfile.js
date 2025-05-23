@@ -76,13 +76,13 @@ function js () {
 // Static Server + watching scss/html files
 function serve () {
   browserSync.init({
-    proxy: 'http://benach-viagye.ddev.site',
+    proxy: 'https://www.drupal.org',
   })
 
   gulp.watch([paths.scss.watch, paths.scss.bootstrap], styles).on('change', browserSync.reload)
 }
 
-const build = gulp.series(styles, gulp.parallel(js))
+const build = gulp.series(styles, gulp.parallel(js, serve))
 
 exports.styles = styles
 exports.js = js

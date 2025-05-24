@@ -65,3 +65,11 @@ $ ./node_modules/.bin/gulp
 ```
 
 Iconos: Fontawesome https://fontawesome.com/icons?d=gallery&m=free
+
+https://docs.google.com/forms/d/e/1FAIpQLSdlcAVrlGTSEjN8v5BXMDOGsLr3qS4_OuTmQY22dRymZ8XLpA/viewform
+
+Reinstalar el los modulos del thema
+```shell
+$ rm -rf node_modules package-lock.json
+$ npm install
+```

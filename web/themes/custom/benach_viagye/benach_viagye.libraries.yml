@@ -1,9 +1,8 @@
-global-styling:
+styling:
   version: VERSION
   js: 
-    js/popper.min.js: { weight: -49 }
     js/bootstrap.min.js: { weight: -48 }
-    js/barrio.js: {}
+    js/main.js: {}
     js/custom.js: {}
   css:
     component:

@@ -16,12 +16,15 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "drupal/admin_toolbar": "^3.6",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/bootstrap_sass": "^5.0",
         "drupal/core-composer-scaffold": "^11.1",
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
         "drupal/gin": "^4.0",
+        "drupal/menu_breadcrumb": "^2.0",
+        "drupal/menu_link_attributes": "^1.5",
         "drupal/views_bootstrap": "^5.4",
         "drush/drush": "^13.6"
     },

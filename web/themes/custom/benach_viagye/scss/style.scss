@@ -30,7 +30,7 @@ a {
 }
 
 .menu--main li a {
-    color: $primary-shade;
+    //color: $primary-shade;
 }
 
 .menu--account li a {
@@ -393,7 +393,9 @@ a {
   
     .navmenu li:hover>a,
     .navmenu .active,
-    .navmenu .active:focus {
+    .navmenu .active:focus,
+    .navmenu .is-active,
+    .navmenu .is-active:focus {
       color: var(--nav-hover-color);
     }
   
@@ -2026,6 +2028,7 @@ a {
   /*--------------------------------------------------------------
   # Starter Section Section
   --------------------------------------------------------------*/
-  .starter-section {
-    /* Add your styles here */
+
+  .navbar-nav {
+    flex-direction: initial;
   }
